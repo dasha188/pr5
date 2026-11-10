@@ -69,14 +69,7 @@
   --alert-padding: var(--space-4);
 }
 
-/* ОСНОВНАЯ РАБОТА: добавьте обе ветви тёмной темы.
- * 1) @media (prefers-color-scheme: dark) { :root:not([data-theme]) { ... } }
- * 2) :root[data-theme="dark"] { ... }
- * Переопределяются только СЕМАНТИЧЕСКИЕ цветовые токены, не примитивы.
- * Не забудьте color-scheme: dark; и контраст --color-link.
- * Светлая тема - значения по умолчанию, поэтому для data-theme="light"
- * достаточно color-scheme: light (если он уже есть у :root).
- */
+/* ОСНОВНАЯ РАБОТА*/
 
 /* TODO: SYSTEM_DARK */
 @media (prefers-color-scheme: dark) {
@@ -131,9 +124,7 @@
   --color-warning-bg: #46320f;
   color-scheme: dark;
 }
-/* САМОСТОЯТЕЛЬНАЯ РАБОТА:
- * :root[data-density="compact"] { --button-height: ...; ... }
- */
+/* САМОСТОЯТЕЛЬНАЯ РАБОТА */
 :root[data-density="compact"] {
   --button-height: 2.25rem;
   --control-height: 2.25rem;

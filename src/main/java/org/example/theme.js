@@ -1,8 +1,4 @@
-/* ОСНОВНАЯ РАБОТА: реализуйте переключение темы без библиотеки.
- * "auto" означает отсутствие атрибута data-theme у <html>.
- * В таком случае тёмную тему применяет CSS media query.
- * Настройку нужно сохранять в localStorage (ключ "atlas-theme").
- */
+/* ОСНОВНАЯ РАБОТА */
 const root = document.documentElement;
 const themeSelect = document.querySelector('#theme-select');
 const demoAction = document.querySelector('#demo-action');
